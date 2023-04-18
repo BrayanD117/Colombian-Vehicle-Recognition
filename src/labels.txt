@@ -1,0 +1,3 @@
+0 Camion
+1 Carro
+2 Moto
