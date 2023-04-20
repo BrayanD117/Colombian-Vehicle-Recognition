@@ -1,2 +1,6 @@
-/Datos
+# Carpeta con los Dataset para entrenamiento
+/Dataset
+
+# Carpeta de imagenes que seran usadas en predicciones
 /Prediction_Data
+

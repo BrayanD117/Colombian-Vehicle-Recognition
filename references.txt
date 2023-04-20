@@ -1,0 +1,10 @@
+REFERENCES
+
+- Trucks Dataset extracted from:
+https://www.kaggle.com/datasets/enesumcu/car-and-truck
+
+- Car Dataset extracted from:
+https://ai.stanford.edu/~jkrause/cars/car_dataset.html
+
+- motorbike Dataset extracted from:
+https://www.kaggle.com/datasets/savanagrawal/detect-person-on-motorbike-or-scooter?select=dataset
