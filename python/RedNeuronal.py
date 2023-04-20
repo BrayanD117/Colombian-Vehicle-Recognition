@@ -1,5 +1,6 @@
 from tensorflow import keras
 # import keras
+from keras.preprocessing import image
 from keras.models import Sequential
 from keras.layers import Conv2D, MaxPooling2D, Flatten, Dense
 import numpy as np

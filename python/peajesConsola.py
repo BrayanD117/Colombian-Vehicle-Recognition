@@ -6,7 +6,7 @@ import numpy as np
 np.set_printoptions(suppress=True)
 
 # Cargar el modelo
-model = load_model("src\keras_model.h5", compile=False)
+model = load_model("src\modelo.h5", compile=False)
 
 # Cargar las etiquetas de reconocimiento
 class_names = open("src\labels.txt", "r").readlines()
@@ -14,7 +14,7 @@ class_names = open("src\labels.txt", "r").readlines()
 # Crear la matriz de la forma correcta para alimentar el modelo de keras
 # La 'longitud' o el número de imágenes que puede colocar en la matriz es
 # determinado por la primera posición en la tupla de forma, en este caso 1
-data = np.ndarray(shape=(1, 224, 224, 3), dtype=np.float32)
+data = np.ndarray(shape=(1, 64, 64, 3), dtype=np.float32)
 
 # Ruta de la imagen a verificar que se solicita al usuario
 image_path = input("Ingrese la ruta de la imagen: ")
@@ -22,7 +22,7 @@ image_path = input("Ingrese la ruta de la imagen: ")
 # Abre el archivo de imagen
 with Image.open(image_path) as image:
     # cambiar el tamaño de la imagen para que tenga al menos 224x224 y luego recortar desde el centro
-    size = (224, 224)
+    size = (64, 64)
     image = ImageOps.fit(image, size, Image.LANCZOS)
 
     # convertir la imagen en una matriz numpy
