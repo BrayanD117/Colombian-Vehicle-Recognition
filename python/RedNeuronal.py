@@ -34,7 +34,7 @@ model.add(Dense(3, activation='softmax'))
 model.compile(loss='categorical_crossentropy', optimizer='adam', metrics=['accuracy'])
 
 # Entrenar el modelo
-model.fit(train_generator, epochs=15)
+model.fit(train_generator, epochs=12)
 
 # Evaluación
 # Cargar las imágenes de prueba desde la carpeta "Dataset"
