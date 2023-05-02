@@ -4,3 +4,5 @@
 # Carpeta de imagenes que seran usadas en predicciones
 /Prediction_Data
 
+# Carpeta de analisis de los optimizadores (Comparacion)
+/analysis
