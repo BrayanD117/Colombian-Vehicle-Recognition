@@ -13,7 +13,7 @@ train_generator = train_datagen.flow_from_directory(
         class_mode = 'categorical')
 
 # Cargar las etiquetas desde el archivo "labels.txt"
-with open('src\labels.txt', 'r') as f:
+with open('src\vehicle_type_models\labels.txt', 'r') as f:
     labels = f.read().splitlines()
 
 # Crear el modelo
@@ -56,4 +56,4 @@ print("Precisión en los datos de prueba:", accuracy)
 
 ########## Guardar el modelo ##########
 # Guardar el modelo entrenado en un archivo
-model.save('src\modelo.h5')
+model.save('src\vehicle_type_models\modelo.h5')

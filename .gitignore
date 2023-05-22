@@ -1,6 +1,9 @@
 # Carpeta con los Dataset para entrenamiento
 /Dataset
 
+# Carpeta con las imagenes de las placas
+/Plates_Data
+
 # Carpeta de imagenes que seran usadas en predicciones
 /Prediction_Data
 

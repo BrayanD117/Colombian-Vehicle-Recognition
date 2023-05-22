@@ -3,7 +3,7 @@ from keras.preprocessing import image
 from keras.models import Sequential
 from keras.layers import Conv2D, MaxPooling2D, Flatten, Dense
 import numpy as np
-from keras.optimizers import SGD
+from keras.optimizers import Adagrad
 
 
 # Cargar las imágenes de entrenamiento desde la carpeta "Dataset"
@@ -15,7 +15,7 @@ train_generator = train_datagen.flow_from_directory(
         class_mode = 'categorical')
 
 # Cargar las etiquetas desde el archivo "labels.txt"
-with open('src\labels.txt', 'r') as f:
+with open('src\vehicle_type_models\labels.txt', 'r') as f:
     labels = f.read().splitlines()
 
 # Crear el modelo
@@ -33,7 +33,7 @@ model.add(Dense(128, activation='relu'))
 model.add(Dense(3, activation='softmax'))
 
 # Compilar el modelo
-model.compile(loss='categorical_crossentropy', optimizer=SGD(lr=0.07), metrics=['accuracy'])
+model.compile(loss='categorical_crossentropy', optimizer=Adagrad(lr=0.07), metrics=['accuracy'])
 
 # Entrenar el modelo
 model.fit(train_generator, epochs=12)
@@ -58,4 +58,4 @@ print("Precisión en los datos de prueba:", accuracy)
 
 ########## Guardar el modelo ##########
 # Guardar el modelo entrenado en un archivo
-model.save('src\modeloSDG.h5')
+model.save('src\vehicle_type_models\modelo2.h5')

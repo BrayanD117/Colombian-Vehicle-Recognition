@@ -6,10 +6,10 @@ import numpy as np
 np.set_printoptions(suppress=True)
 
 # Cargar el modelo
-model = load_model("src\modelo.h5", compile=False)
+model = load_model("src/vehicle_type_models/modelo.h5", compile=False)
 
 # Cargar las etiquetas de reconocimiento
-class_names = open("src\labels.txt", "r").readlines()
+class_names = open("src/vehicle_type_models/labels.txt", "r").readlines()
 
 # Crear la matriz de la forma correcta para alimentar el modelo de keras
 # La 'longitud' o el número de imágenes que puede colocar en la matriz es
