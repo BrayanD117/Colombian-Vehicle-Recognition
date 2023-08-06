@@ -5,7 +5,7 @@ This repository contains a project for Colombian vehicle and license plate recog
 
 The main objective of this project is to develop a computer vision system capable of automatically identifying the type of vehicles and recognizing Colombian license plates in images or videos. It aims to provide accurate and efficient recognition algorithms specifically designed for the Colombian context.
 
-Features:
+# Features:
 
 Implementation in Python: The project is developed using the Python programming language, known for its simplicity and flexibility. Python enables easy collaboration and extension of the project.
 
